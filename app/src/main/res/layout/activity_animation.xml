@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_animation"
+    android:id="@+id/animationLayout"
+    tools:context="com.apppartner.androidprogrammertest.AnimationActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/AnimationBackground"
+        android:layout_width="@dimen/animation_bg_width"
+        android:layout_height="@dimen/animation_bg_height"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/animation_bg_marginbottom"
+        android:layout_marginLeft="@dimen/animation_bg_margin"
+        android:layout_marginRight="@dimen/animation_bg_margin"
+        android:layout_marginTop="@dimen/animation_bg_margin"
+        android:background="@drawable/bg_cell_animation_test"
+        android:padding="12dp"
+        />
+
+    <ImageButton
+        android:id="@+id/animateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/icon_margin_bottom"
+        android:background="@drawable/btn_fade"
+        />
+
+    <ImageView
+        android:id="@+id/appPartnerIcon"
+        android:layout_width="@dimen/animation_icon_width"
+        android:layout_height="@dimen/animation_icon_height"
+        android:src="@drawable/ic_apppartner"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="@dimen/animation_text_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="@dimen/animation_text_width"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Animate AppPartner icon. Make it fade to 0% alpha and then to 100% alpha when the fade button is pressed. Allow it to be dragged around the screen by touching it and dragging"
+            android:id="@+id/instructions"
+
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="@dimen/animation_text_width"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="BONUS POINTS FOR CREATIVITY"
+            android:id="@+id/bonus"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
